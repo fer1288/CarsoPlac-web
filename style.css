@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font family: 
+    Bebas Neue for headings and body text
+    Roboto for body text with italics and weights
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    --color-rojo: #c91842;
+    --color-negro:  #191a1f;
+    --color--fondo:   #24272e;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+   
+}
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background: linear-gradient(rgba(29, 30, 35, 0.8), rgba(29, 30, 35, 0.8)); /* Fondo inicial */
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0 0 0;
+    position: relative; /* Asegura que las imágenes se posicionen relativas al header */
+    overflow: hidden; /* Evita que las imágenes se desborden */
+
+}
+.header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca las imágenes detrás del contenido del header */
+}
+
+.header img.active {
+    opacity: 1;
+}
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+   width: 100px;
+   height: 120px;
+   margin-top: 30px;
+   border-radius: 20px;
+   
+}
+.logo img {
+    opacity: 1; /* Hace las imágenes visibles */
+    z-index: 1; /* Coloca las imágenes delante de otros elementos */
+    position: relative; /* Para que el z-index funcione correctamente */
+    width: auto; /* Permite que las imágenes tengan su tamaño original */
+    height: auto; /* Permite que las imágenes tengan su tamaño original */
+}
+
+   
+
+
+
+.menu-icono {
+   width: 40px;
+    height: 40px;
+
+}
+.menu .navbar ul li {
+    position: relative;
+   
+    float: left;
+}
+
+.menu .navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.menu .navbar ul li a:hover {
+    color: var(--color-rojo);
+}
+
+#menu {
+    display: none;
+}
+.menu label {
+    display: none;
+    cursor: pointer;
+}
+.header-txt {
+   text-align: center;
+    padding:0 200px;
+}
+.header-txt h1 {
+    font-size: 65px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+  line-height: 1;
+}
+p {
+    font-size: 18px;
+   color: #d4d4d4;
+   margin-bottom: 20px;
+}
+.btn-1 {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: var(--color-rojo);
+    border-radius: 5px;
+}
+
+#about {
+    padding: 100px 0;
+    background: #24272e;
+}
+.about-content {
+    display: flex;
+  
+}
+.about-txt {
+    flex-basis:5 0% ;
+    padding: 35px;
+}
+span {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--color-rojo);
+}
+h2 {
+    color: white;
+    font-size: 35px;
+    margin: 15px 0;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    line-height: 1;
+ 
+}
+
+h2:hover {
+   color: var(--color-rojo);
+}
+
+
+hr {
+   border: 1px solid var(--color-principal);
+   width: 10%;
+   margin-bottom: 30px;
+}
+
+.about-img {
+    flex-basis: 50%;
+  
+}
+.about-img {
+    border-radius: 15px;
+    width: 200px;
+    height: 150px;
+}
+
+#productos{
+    padding: 10px 0;
+    background-color: var(--color-negro);
+    text-align: center;
+
+}
+.products-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.products-img {
+    /*flex-basis: 30%;
+    padding: 15px;*/
+    width: 100px;
+    height: 150px;
+    object-fit: fill; /* La imagen se estirará para llenar el contenedor, puede distorsionarse */
+}
+  
+
+.placa-1 {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 30%;
+  height: 500px;
+  background-color: #24272e;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+}
+
+.precio {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.precio:hover {
+    color: var(--color-rojo);
+   
+}
+
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin: 15px 0;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    line-height: 1;
+}
+.contact {
+    padding: 100px 0;
+    background: #24272e;
+    text-align: center;
+}
+
+/*  LOGO DE WHATSAPP*/
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    bottom: 40px;
+     right: 40px;
+     color: #fff;
+     border-radius: 50%;
+     text-align: center;
+     box-shadow: 2px 2px 3px #999;
+     z-index: 999;
+}
+
+.fa-whatsapp {
+    font-size: 60px;
+   
+}
+.float:hover {
+    background-color: #28e76e;
+   
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin-bottom: 80px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #191a1f;
+    font-size: 30px;
+}
+
+.social-icons a:hover {
+    color: var(--color-rojo);
+}
+
+
+.footer-bottom {
+ 
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid var(--color-rojo);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+@media (max-width:991px) {
+    .menu {
+        padding: 20px;
+
+    
+    
+    }
+    .menu label {
+        display: initial;
+    }
+
+   
+
+/* MENU HAMBURGUESA */
+.menu .navbar {
+    position: fixed;
+    top: 90px; /* Ajusta la posicion segun la altura de el menú */
+    
+    width: 100%;
+    right: 0;
+    background-color: var(--color-rojo); /* Color de fondo para el navbar */
+
+    overflow-y: auto; /* Permite el desplazamiento dentro del menú si es largo */
+    max-height: calc(100vh - 60px); /* Ajusta la altura máxima */
+    display: none;
+    z-index: 10; /* Asegura que el menú esté encima de otros elementos */
+
+
+}
+
+.menu .navbar ul {
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.menu .navbar ul li {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* CAMBIO DE COLOR NAVBAR */
+.menu .navbar ul li a:hover {
+    color: var(--color-negro); /* Usamos el color de acento amarillo */
+}
+
+#menu:checked ~ .navbar {
+    display: block; /* Cambiado a block para mayor compatibilidad */
+}
+
+
+
+    .header {
+        
+        min-height: 0vh;
+        padding: 100px 30px;
+}
+
+.header-txt {
+    text-align: center;
+    padding: 0;
+}
+
+    #about {
+        padding: 30px;
+
+    }
+    .about-content {
+        flex-direction: column;
+        
+    }
+
+#productos {
+    padding: 30px;
+  
+}
+.products-content {
+  
+    flex-direction: column;    
+}
+
+.placa-1 {
+    margin-bottom: 30px;
+  
+}
+.header-content {
+    padding: 30px;
+    margin-top: 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-txt {
+    padding: 0 0 40px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+}
+
+
+    @media (max-width:768px) {
+
+        .menu {
+            padding: 15px;
+        }
+
+    
+    .header-content {
+    
+      margin-top: 80px;
+    
+    }
+   
+
+   
+    
+    
+        .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .products-content {
+         display: flex;
+         align-items: center;
+         justify-content: center;       
+    }
+
+
+
+
+
+    .footer-section {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+
+}
+
+
+@media (max-width:320px) {
+
+    .float {
+       width: 40px;
+        height: 40px;
+    }
+    
+    .fa-whatsapp {
+        font-size: 40px;
+       
+    }
+
+    .menu {
+        padding: 10px;
+    }
+    .navbar ul li {
+        font-size: 12px;
+    }
+    .header-txt h1 {
+        font-size: 18px;
+    }
+    .header-txt p {
+        font-size: 14px;
+    }
+
+
+}
