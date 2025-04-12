@@ -339,14 +339,14 @@ h3 {
 /* MENU HAMBURGUESA */
 .menu .navbar {
     position: fixed;
-    top: 90px; /* Ajusta la posicion segun la altura de el menú */
+    top: 60px; /* Ajusta la posicion segun la altura de el menú */
     
     width: 100%;
     right: 0;
     background-color: var(--color-rojo); /* Color de fondo para el navbar */
 
     overflow-y: auto; /* Permite el desplazamiento dentro del menú si es largo */
-    max-height: calc(100vh - 60px); /* Ajusta la altura máxima */
+    max-height: calc(100vh - 40px); /* Ajusta la altura máxima */
     display: none;
     z-index: 10; /* Asegura que el menú esté encima de otros elementos */
 
@@ -378,7 +378,7 @@ h3 {
     .header {
         
         min-height: 0vh;
-        padding: 100px 30px;
+        padding: 80px 10px;
 }
 
 .header-txt {
@@ -388,19 +388,30 @@ h3 {
 
     #about {
         padding: 30px;
+       
+
 
     }
     .about-content {
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         
     }
+
+    .about-txt {
+     text-align: center;
+    }
+  
 
 #productos {
     padding: 30px;
   
 }
 .products-content {
-  
+
+    justify-content: center;
+    align-items: center;
     flex-direction: column;    
 }
 
@@ -420,6 +431,23 @@ h3 {
     margin-bottom: 20px;
     text-align: center;
 }
+
+.footer-container {
+    justify-content: center;
+    align-items: center;
+
+
+}
+.mapa {
+    margin-top: 30px;
+    
+}
+.footer-section {
+  margin-left: 80px;
+}
+
+
+
 }
 
 
@@ -435,12 +463,7 @@ h3 {
       margin-top: 80px;
     
     }
-   
-
-   
-    
-    
-        .about-content {
+       .about-content {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -453,13 +476,13 @@ h3 {
     }
 
 
+.footer-section {
+    flex: 1 1 100%;
+    align-items: center;
+    align-items: center;
+    
+}
 
-
-
-    .footer-section {
-            flex: 1 1 100%;
-            text-align: center;
-        }
 
 }
 
@@ -488,6 +511,15 @@ h3 {
     .header-txt p {
         font-size: 14px;
     }
+
+
+
+    .placa-1 {
+       
+      width: 100%;
+      padding: 10px;
+
+       }
 
 
 }
