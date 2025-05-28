@@ -243,6 +243,51 @@ hr {
 }
 
 
+.hogar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-negro);
+}
+  
+
+    .producto-hogar {
+        display: flex;
+        flex-direction: column; /* Organiza los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente (opcional) */
+        padding: 40px;
+        width: 60%;
+        height: 600px;
+        background-color: #24272e;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        margin: 30px;
+    }
+    
+    .producto-hogar img {
+        max-width: 100%;
+        margin-bottom: auto; /* Empuja la imagen hacia arriba y el span hacia abajo */
+    }
+    
+    .producto-hogar .precio {
+        margin-top: auto; /* Empuja el span hacia abajo si la imagen tiene margin-bottom: auto */
+    }
+    
+    /* O, si solo quieres un espacio fijo: */
+    .producto-hogar img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    
+
+
+
+
+
+
+
 h3 {
     color: white;
     font-size: 25px;
@@ -515,6 +560,34 @@ text-align: center;
 width: 100%;
 
 }
+
+
+
+  
+
+    .producto-hogar {
+      width: 400px;
+      height: 450px;
+    
+
+     
+       
+    }
+   
+    .producto-hogar img {
+        max-width: 350px;
+        max-height: 400px;
+        margin-top: 30px;
+    }
+    
+   
+    
+
+
+
+
+
+
 
 }
 
