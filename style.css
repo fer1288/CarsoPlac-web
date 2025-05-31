@@ -275,11 +275,11 @@ hr {
         margin-top: auto; /* Empuja el span hacia abajo si la imagen tiene margin-bottom: auto */
     }
     
-    /* O, si solo quieres un espacio fijo: */
+    /* O, si solo quieres un espacio fijo: 
     .producto-hogar img {
         max-width: 100%;
         margin-bottom: 15px;
-    }
+    } */
     
    /* Baldosones de exterior */ 
 
@@ -751,6 +751,7 @@ height: 50px;
         overflow: hidden;
         padding-bottom: 56.25%;
         position: relative;
+        margin: 20px auto;
      
     
     }
