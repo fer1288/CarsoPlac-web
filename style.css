@@ -281,6 +281,95 @@ hr {
         margin-bottom: 15px;
     }
     
+   /* Baldosones de exterior */ 
+
+#Placas_exterior {
+    padding: 10px 0;
+    background-color: var(--color-negro);
+    text-align: center;
+  
+}
+
+/* Contenedor de los productos para alinearlos horizontalmente */
+.productos-exterior-container {
+    display: flex; /* Habilita Flexbox para alinear los productos */
+    justify-content: center; /* Centra los productos horizontalmente */
+    align-items: flex-start; /* Alinea los ítems al inicio del contenedor (útil si tienen diferentes alturas) */
+    padding: 20px;
+    gap: 40px; /* Añade un espacio entre los productos. Puedes ajustar este valor. */
+    flex-wrap: wrap; /* Permite que los productos se envuelvan a la siguiente línea si no caben */
+    text-align: center;
+}
+
+
+/* Estilos individuales de cada producto */
+.producto-exterior {
+    display: flex; /* Usa flexbox para alinear el contenido dentro de cada producto si es necesario */
+    flex-direction: column; /* Apila el contenido (imagen, texto) verticalmente */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos internos */
+    align-items: center; /* Centra horizontalmente el contenido dentro del producto */
+    padding: 20px;
+    width: 30%; /* Ajusta el ancho para que quepan 3 productos por fila, dejando espacio para el gap */
+    min-width: 200px; /* Establece un ancho mínimo para evitar que se hagan demasiado pequeños en pantallas chicas */
+    height: 300px; /* Mantén una altura fija o considera min-height para flexibilidad */
+    background-color: #24272e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   
+}
+
+.producto-exterior img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto/contenido del producto */
+}
+
+/* SERVICIOS */
+#servicios {
+   padding: 10px 0;
+    background-color: var(--color-negro);
+    text-align: center;
+   
+}
+
+
+.servicios-container ul li {
+    display: inline-block;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    
+}
+.servicios-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+
+      background-color: #24272e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicios-img {
+    width: 150px;
+    height: 180px;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
